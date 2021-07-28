@@ -1,0 +1,61 @@
+.carousel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.77);
+  color: #fff;
+  z-index: 50;
+
+  .contain {
+    position: relative;
+    width: 100%;
+    max-width: 100rem;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+
+    .main-thumb {
+      position: relative;
+      width: 100%;
+      max-width: 825px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .scroller {
+      width: 95%;
+      display: flex;
+      flex-shrink: 0;
+      overflow-x: scroll;
+
+      .sub-image {
+        margin-right: 3px;
+        cursor: pointer;
+        width: 200px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .exit {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 3.5rem;
+      cursor: pointer;
+      font-weight: 700;
+    }
+  }
+}

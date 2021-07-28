@@ -1,0 +1,38 @@
+.admin {
+  display: flex;
+  justify-content: center;
+  margin: 5vh 0;
+}
+
+.add-prize {
+  min-width: 500px;
+  text-align: center;
+
+  &__heading {
+    color: #222;
+  }
+
+  &__form {
+    width: 100%;
+
+    .input-group {
+      margin: 0 auto;
+
+      &__input {
+        width: 80%;
+        padding: 4px 6px;
+
+        &--ta {
+          height: 100px;
+          resize: none;
+        }
+      }
+    }
+
+    .submit-btn {
+      margin-top: 8px;
+      padding: 5px;
+      cursor: pointer;
+    }
+  }
+}

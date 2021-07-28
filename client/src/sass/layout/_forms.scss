@@ -1,0 +1,71 @@
+.form {
+  max-width: 290px;
+  width: 80%;
+  color: $color-primary;
+
+  @media only screen and (min-width: 768px) {
+    max-width: 350px;
+  }
+
+  div {
+    padding-top: 1.8vh;
+  }
+
+  div h6 {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 3px;
+    padding-left: 0.5rem;
+    letter-spacing: 0.5px;
+
+    @media only screen and (max-height: 685px) {
+      margin-top: 0.75rem;
+    }
+  }
+
+  div input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $color-secondary;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    color: $color-primary;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  input[type="submit"] {
+    margin-top: 3.5vh;
+    border: none;
+    background-color: $color-primary;
+    padding: 1rem;
+    color: $color-secondary;
+    font-weight: bold;
+    letter-spacing: 0.35px;
+    cursor: pointer;
+
+    &:active {
+      background-color: lighten($color-primary, 8%);
+    }
+  }
+
+  .register-login-router {
+    margin-top: 3vh;
+    font-size: 1.2rem;
+  }
+
+  .router-link-form {
+    color: $color-secondary;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+
+.form-error {
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-align: center;
+  max-width: 295px;
+}

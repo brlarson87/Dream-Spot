@@ -1,0 +1,109 @@
+.link-primary {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+  background-color: $color-secondary;
+  border-radius: 2px;
+  padding: 5px 10px;
+
+  margin: 10px 10px 10px 0;
+}
+
+.link-transform {
+  position: absolute;
+  top: 100px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 90px;
+
+  img {
+    height: 20px;
+  }
+}
+
+.link-drop {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  color: $color-secondary;
+}
+
+.header-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #000;
+  border-bottom: solid 2px transparent;
+  padding: 4px;
+  transition: all 0.25s;
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      border-bottom-color: $color-secondary;
+      color: $color-secondary;
+      padding: 0 4px 4px 4px;
+    }
+  }
+
+  &--active {
+    color: $color-secondary;
+    border-bottom: solid 2px $color-secondary;
+  }
+}
+
+.link-info {
+  color: $color-primary;
+  font-weight: 700;
+  font-size: 14px;
+  padding-bottom: 4px;
+  text-decoration: none;
+  border-bottom: solid 2px darken($color-primary, 6%);
+}
+
+.link-back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  background-color: $color-primary;
+  height: 4vh;
+  min-height: 32px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  z-index: 20;
+}
+
+.drop-down-link {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.2s;
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      color: $color-secondary;
+      background-color: darken($light-gray, 6%);
+    }
+  }
+}
+
+.drop-down-link {
+  text-decoration: none;
+  color: $color-primary;
+}

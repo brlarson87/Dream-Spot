@@ -1,0 +1,40 @@
+.flex-centered {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @media only screen and (max-height: 551px) {
+    padding: 1rem 0;
+  }
+}
+
+.m-b-sm {
+  margin-bottom: 1rem;
+}
+
+.m-b-med {
+  margin-bottom: 2vh;
+  color: $color-primary;
+
+  @media only screen and (max-height: 685px) {
+    margin-bottom: 1vh;
+  }
+}
+
+.m-r-sm {
+  margin-right: 0.5rem;
+}
+
+.m-r-med {
+  margin-right: 1rem;
+}
+
+.normal {
+  color: $color-secondary;
+}
+
+.danger {
+  color: red;
+}

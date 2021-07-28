@@ -1,0 +1,19 @@
+.main-title {
+  position: fixed;
+  top: 14%;
+  left: 2%;
+  text-decoration: overline;
+  font-size: 3.9rem;
+  font-weight: 500;
+  z-index: 11;
+  transform: rotate(-35deg);
+  letter-spacing: 8px;
+  font-family: "Sacramento", cursive;
+  animation: glow linear 3s infinite;
+  text-shadow: 1px 1px 1px rgba(#000, 0.65);
+
+  @media only screen and (min-width: 1050px) {
+    font-size: 5.8rem;
+    top: 18%;
+  }
+}
